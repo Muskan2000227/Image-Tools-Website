@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.css">
+<section class=" text-dark bg-primary-subtle" style="background-image: url({%static 'images/color1.png' %});background-size: cover;">
+    <div class="row" style="background-image: url({%static 'images/tri.png' %});"> 
+        <div class="col-md-12" >
+        <center><h1 style="margin-top:50px;padding-top:50px;padding-bottom: 100px;"  data-aos="flip-up">EDITORS</h1>
+    </div>
+</section>
+    
+<section style="margin-top: 50px;">
+    <div class="container">
+       
+        <div class="row mt-5">
+            {% for i in data%}
+            <div class="col-md-4">
+    <div class="card" style="width: 18rem;margin-bottom:50px;border:none">
+      <a href="{{i.Website}}" target="__blank"> <img src="{{i.Image.url}}"  data-aos="zoom-in" class="card-img-top" alt="..." height="200px"></a>
+        <div class="card-body">
+          <h4 class="card-title" style="font-family: 'Kalam', cursive;">{{i.name}}</h4>
+ 
+        </div>
+        </div>
+      </div>
+      {% endfor %}
+
+      </div>
+      </div>
+
+</section>
+<script src="https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.js"></script>
+
+<script>
+    AOS.init()
+</script>
+{% endblock %}

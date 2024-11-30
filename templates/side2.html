@@ -1,0 +1,125 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> Drop Down Sidebar Menu </title>
+    <link rel="stylesheet" href="{% static 'side2.css' %}">
+    <link rel="stylesheet" href="{%static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{%static 'icofont/icofont.min.css' %}"> 
+    <!-- Boxiocns CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href='https://fonts.googleapis.com/css?family=Acme' rel='stylesheet'>
+   </head>
+<body>
+  
+  <div class="sidebar close pt-2">
+    <div class="logo-details">
+      <i class='icofont-woman-bird'></i>
+      <span class="logo_name"><h2 style="font-family: Acme;">Pickstock</h2></span>
+    </div>
+    <ul class="nav-links">
+      <li>
+        <a href="{% url 'main'%}">
+          <i class='bx bx-grid-alt' ></i>
+          <span class="link_name" style="font-family: Acme;">Dashboard</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="{% url 'main' %}">Dashboard</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='icofont-user-alt-5' ></i>
+         <span class="link_name" style="font-family: Acme;">My Account</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">My Account</a></li>
+          <li><a href="{% url 'myprofile' %}">My Profile</a></li>
+          <li><a href="{% url 'editprofile' %}">Edit Profile</a></li>
+          
+        </ul>
+      </li>
+      <li>
+        <a href="{% url 'changepassword' %}">
+          <i class='icofont-ui-lock' ></i>
+          <span class="link_name" style="font-family: Acme;">Change Password</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="{% url 'changepassword' %}">Change Password</a></li>
+        </ul>
+      </li>
+      <li> 
+        
+        <a href="{% url 'tools' %}">
+          <i class='bx bx-pie-chart-alt-2' ></i>
+          <span class="link_name" style="font-family: Acme;">Tools</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="{% url 'tools' %}">Tools</a></li>
+        </ul>
+      </li>
+      <li>
+        
+        
+      </li>
+      <li>
+        <a href="{% url 'helpsupport'%}">
+          <i class='icofont-live-messenger' ></i>
+          <span class="link_name" style="font-family: Acme;">Help & Support</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="{% url 'helpsupport'%}">Help & Support</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="{% url 'review' %}">
+          <i class='icofont-ui-message'></i>
+          <span class="link_name" style="font-family: Acme;">Review</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="{% url 'review' %}">Review</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="{% url 'Logout' %}">
+          <i class='icofont-ui-power' ></i>
+          <span class="link_name" style="font-family: Acme;">Log out</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="{% url 'Logout' %}">Log out</a></li>
+        </ul>
+      </li>
+      <li>
+    <div class="profile-details">
+    <!--<div class="profile-content">
+        <img src="image/profile.jpg" alt="profileImg">
+      </div>
+      <div class="name-job">
+        <div class="profile_name">Prem Shahi</div>
+        <div class="job">Web Desginer</div>
+      </div>
+      <i class='bx bx-log-out' ></i>
+    </div>-->
+  </li>
+</ul>
+  </div>
+  <section class="home-section" style="background: none;">
+    <div class="home-content" style="position: fixed;">
+      <i class='bx' ></i>
+      <a href="{%url 'main' %}"></a>
+    </div>
+    {% block content %}
+    {% endblock %}
+  </section>
+
+  <script src="{%static 'side2.js' %}"></script>
+    
+   
+
+</body>
+</html>

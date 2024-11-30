@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+<section>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 mt-5 mb-5">
+            {% for i in data %}
+            <details class="border p-2 mt-3 shadow bg-light rounded">
+                <summary class=" text-dark fs-4">{{i.ques}}</summary>
+                <p class="border-top p-3" style="font-size: 18px;">{{i.ans}}</p>
+            </details>
+            
+            {% endfor %}
+        </div>
+    </div>
+</div>
+</section>
+
+{% endblock %}

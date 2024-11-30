@@ -1,0 +1,54 @@
+{% extends 'side2.html' %}
+{% block content %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{%static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{%static 'icofont/icofont.min.css' %}">
+    
+</head>
+<body style="background-color:#E4E9F7;">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12" data-aos="fade-up">
+                    <h1 style="text-align: center;">Text extractor</h1>
+                    <hr>
+                    <center>  <h2 style="color:blue" class=" mt-5 mb-5">The text from the Image is :</h2>
+                   <!--<h4 class="text-dark pt-5 pb-5 ps-5 pe-5 mt-2" style="border:1px solid black" >{{txt}}</h4></center>-->
+                   <!--<input type="text" value="{{txt}}" style="width:1300px;height:100px; overflow-wrap: break-word; word-wrap: break-word; word-break: break-all;" class="txt form-control"><br>-->
+<textarea style="width:1100px;height:150px; " class="txt form-control" >{{txt}}</textarea>
+                   <br>
+
+<input type="button" value="Copy" class="btn fs-5" style="border:1px solid black;">
+
+
+                  
+
+                </div>
+                <img src=" {%static  'images/abe.jpg' %}" width="500px" height="500px" class=" mt-5 mb-5">  
+            </div>
+        </div>
+    </div>
+    
+   <script>
+    let btn=document.querySelector('.btn');
+    btn.addEventListener("click",function(){
+        let txt=document.querySelector('.txt');
+        txt.select();
+        document.execCommand('copy');
+        alert('Copied to clipboard!');
+
+
+
+    });
+   </script> 
+</body>
+</html>
+
+{% endblock %}

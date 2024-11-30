@@ -1,0 +1,186 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link rel="stylesheet" href="{%static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{%static 'icofont/icofont.min.css' %}"> 
+    <link href='https://fonts.googleapis.com/css?family=Acme' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.css">
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <section class=" text-dark bg-primary-subtle" style="background-image: url({%static 'images/color1.png' %});background-size: cover;">
+        <div class="row" style="background-image: url({%static 'images/tri.png' %});"> 
+            <div class="col-md-12" >
+            <center><h1 style="margin-top:50px;padding-top:50px;padding-bottom: 100px;">ABOUT US</h1>
+            
+            </div>
+            
+        </section>
+        
+    
+    <section style="background-image: url({%static 'images/color1.png' %});background-size: cover;">
+        <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+           
+            <img src="{%static 'images/team.png' %}" data-aos="zoom-out"  style="padding-top: 150px;width:450px;">
+            <img src="{%static 'images/sec31.png' %}"  style="width:100px;" >
+          </div>
+          <div class="col-md-6" style="padding-top:120px;padding-bottom: 150px;">
+            
+            <h5 class="text-danger" style="font-family: 'Kalam', cursive;">About us</h5>
+            <img src="{%static 'images/tri.png' %}" class="position-absolute">
+            <h1 class="pb-3" style="font-family: 'Poppins', sans-serif;"><p>We're Your Virtual Photo</p><p>Editing & Design Studio</p></h1>
+             <b><p style="font-size:20px;">Welcome to our Image Editing Website! </p><p style="font-size:20px;"> </p><p style="font-size:20px;margin-bottom:40px;">  </p></b>
+             <p style="font-size:20px;"> At our website, you'll find a wide range of features and services<br>  to enhance and transform your images.<br><br>Our website is providing an intuitive interface and powerful tools to bring your creative visions to life. Enjoy exploring the world of image editing with us! </p>
+            
+          </div>
+        </div>
+        </div>
+        
+      </section>
+
+      <section  style="margin-bottom:120px;">
+        <div class="container">
+        <h5 class="mt-5 text-danger pt-5" style="text-align:center;font-family: 'Kalam', cursive;">Clients</h5>
+        <h1 class="text-dark " style="text-align:center;margin-bottom:70px;font-family: 'Poppins', sans-serif;">Some Of Our Clients</h1>
+         <div class="row">
+          <div class="col-2" style="padding-left:70px;">
+            <img src="{%static 'images/iconic.png' %}" data-aos="flip-left">
+          </div>
+          <div class="col-3" style="padding-left:70px;">
+            <img src="{%static 'images/microw.png' %}" data-aos="flip-left">
+          </div>
+          <div class="col-2">
+            <img src="{%static 'images/tree.png' %}" data-aos="flip-left">
+          </div>
+          <div class="col-2">
+            <img src="{%static 'images/bakery.png' %}" data-aos="flip-left">
+          </div>
+          <div class="col-2" style="padding-left:70px;">
+            <img src="{%static 'images/white.png' %}" data-aos="flip-left">
+          </div>
+         
+         </div>
+         </div>
+      </section>
+
+
+      <section  style="background-image: url({%static 'images/color1.png' %});background-size: cover;padding-bottom:100px;">
+        <div class="container">
+      
+        <h5 class="mt-5 text-danger" style="text-align:center;font-family: 'Kalam', cursive;"  data-aos="zoom-out">Client's Feedback</h5>
+        <h1 class="text-dark " style="text-align:center;margin-bottom:70px;font-family: 'Poppins', sans-serif;">Explore Clients Review</h1>
+        <div class="row"> 
+          <div class="col-md-4 mb-5">
+            <div class="card" style="width:25rem;">
+              <div class="" style="height:200px;background-color: white;">
+            <p style="padding-left:10px;padding-top:20px;;">
+              <i class="icofont-star icofont-2x text-warning"  ></i>
+              <i class="icofont-star icofont-2x text-warning"  ></i>
+              <i class="icofont-star icofont-2x text-warning"  ></i>
+              <i class="icofont-star icofont-2x text-warning"  ></i>
+              <i class="icofont-star icofont-2x text-warning"  ></i>
+            </p>
+             <h5 class="mb-4 ps-3 mt-3" style="color:blue;font-family: 'Poppins', sans-serif;">Excellent</h5>
+             <p class="ps-3 pe-5" > I must say it's incredible! The tools are easy to use, and the results are stunning. I love how I can quickly crop, adjust colors effortlessly.</p>
+              </div>
+              <div class="card-body" style="background-color: rgb(128, 128, 128,0.1);margin-top:50px;">
+                <div class="row">
+                  <div class="col-md-3">
+               <img src="{%static 'images/anna.png' %}" data-aos="zoom-out"  alt="" style="width:80px;padding-right:10px;">
+               </div> 
+               <div class="col-md-9">
+                <h3>Anna Jackson</h3>
+                
+               </div>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-5">
+            <div class="card" style="width:25rem;">
+              <div class="" style="height:200px;background-color: white;">
+            <p style="padding-left:10px;padding-top:20px;;">
+              <i class="icofont-star icofont-2x text-warning"  ></i>
+              <i class="icofont-star icofont-2x text-warning"  ></i>
+              <i class="icofont-star icofont-2x text-warning"  ></i>
+              <i class="icofont-star icofont-2x text-warning"  ></i>
+              <i class="icofont-star icofont-2x text-warning"  ></i>
+            </p>
+             <h5 class="mb-4 ps-3 mt-3" style="color:rgb(4, 151, 4);font-family: 'Poppins', sans-serif;">Awesome Work</h5>
+             <p class="ps-3 pe-5" > The quality of the editing tools and the range of features available are impressive. </p>
+              </div>
+              <div class="card-body" style="background-color: rgba(8, 158, 8, 0.1);margin-top:50px;">
+                <div class="row">
+                  <div class="col-md-3">
+               <img src="{%static 'images/test2.png' %}" data-aos="zoom-out"  alt="" style="width:80px;padding-right:10px;">
+               </div> 
+               <div class="col-md-9">
+                <h3>Micheal Khan</h3>
+                
+               </div>
+              </div>
+              </div>
+              
+            </div>
+          </div>
+          <div class="col-md-4 mb-5">
+            <div class="card" style="width:25rem;">
+              <div class="" style="height:200px;background-color: white;">
+            <p style="padding-left:10px;padding-top:20px;;">
+              <i class="icofont-star icofont-2x text-warning"  ></i>
+              <i class="icofont-star icofont-2x text-warning"  ></i>
+              <i class="icofont-star icofont-2x text-warning"  ></i>
+              <i class="icofont-star icofont-2x text-warning"  ></i>
+              <i class="icofont-star icofont-2x text-warning"  ></i>
+            </p>
+             <h5 class="mb-4 ps-3 mt-3" style="color: red;font-family: 'Poppins', sans-serif;">Wonderful</h5>
+             <p class="ps-3 pe-5" >I'm not very tech-savvy, but this image editing website is incredibly user-friendly. I've been able to create some fantastic images thanks to this website. </p>
+              </div>
+              <div class="card-body" style="background-color: rgba(175, 58, 58, 0.1);margin-top:50px;">
+                <div class="row">
+                  <div class="col-md-3">
+               <img src="{%static 'images/test3.png' %}" data-aos="zoom-out"  alt="" style="width:80px;padding-right:10px;">
+               </div> 
+               <div class="col-md-9">
+                <h3>Ananta Jalil</h3>
+                
+               </div>
+              </div>
+              </div>
+            </div>
+          </div>
+         </div>
+        </div>
+      </section>
+
+
+      <script src="https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.js"></script>
+
+      <script>
+         AOS.init({
+         
+        duration: 600,
+        easing: 'ease-in-sine',
+        delay:50
+      }); 
+      
+        
+      </script>   
+
+</body>
+</html>
+{% endblock %}

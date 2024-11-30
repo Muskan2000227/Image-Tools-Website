@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+<section class=" text-dark bg-primary-subtle" style="background-image: url({%static 'images/color1.png' %});background-size: cover;">
+    <div class="row" style="background-image: url({%static 'images/tri.png' %});"> 
+        <div class="col-md-12" >
+        <center><h1 style="margin-top:50px;padding-top:50px;padding-bottom: 100px;">BLOGS</h1>
+        
+        </div>
+        
+    </section>
+    
+
+
+
+<section>
+    <div class="container">
+       <center> <img src="{{data.Image.url}}" class="mb-5 mt-5" alt="..." height="500px" width="1000px" style="border:2px solid black" ></center>
+        <h1 class="mb-5" style="text-align:center">{{data.title}}</h1>
+        <p class="mb-5 ms-5 me-5">{{data.description|linebreaksbr}}</p>
+        <p class="mb-5 ms-5 me-5">{{data.Writter}}</p>
+    </div>
+</section>
+{% endblock %}

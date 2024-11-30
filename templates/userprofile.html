@@ -1,0 +1,112 @@
+{%extends 'side2.html' %}
+{% block content %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{%static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{%static 'icofont/icofont.min.css' %}">
+    <link href="{%static 'https://fonts.googleapis.com/css?family=Acme'%}" rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.css">
+    <style>
+      input {
+          display: none;
+          margin-left: 400px;
+      }
+      label {
+          height: 50px;
+          width: 150px;
+          border-radius: 6px;
+          border: 1px solid #000;
+      }
+      label:hover {
+          color: #de0611;
+          border: 1px dashed #de0611;
+      }
+  </style>
+  </head>
+<body class="bg-primary-subtle" style="overflow: auto;background-image: url({%static 'images/pp10.jpg' %});background-size: cover;">
+    <script src="{%static 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js' %}" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    
+    <div class="row p-5" >
+      
+      <div class="col-md-2"></div>
+      
+        <div class="col-md-7 mt-4 bg-light " >
+          
+            <div class="row">
+                <div class="col-md-3">
+                  {% if msg == 'success' %}
+                  <img src="{{user.profile.url}}" style="width:100%;border:2px solid black;border-radius: 0%;height:150px;margin-left: 100px;margin-bottom: 20px;" class="mt-5" data-aos="zoom-in"  >
+                  {% elif not user.profile%}
+                  <img src="{%static 'images/avatar.png' %}" style="width:100%;border:2px solid black;border-radius: 0%;height:150px;margin-left: 100px;margin-bottom: 20px;" class="mt-5" data-aos="zoom-in"  >
+                  {% else %}
+            <img src="{{user.profile.url}}" style="width:100%;border:2px solid black;border-radius: 0%;height:150px;margin-left: 100px;margin-bottom: 20px;" class="mt-5" data-aos="zoom-in">
+           {% endif %}
+            <form method="POST" action="" enctype="multipart/form-data">
+              {% csrf_token %}
+              <input type="file" id="file" name="file1" style="margin-bottom: 10px;">  
+              <label for="file" style="margin-left: 100px; padding:5px;font-size:15px;padding-left:20px;padding-top:8px;">CHOOSE PHOTO</label>
+              <div id="file-selected-message" style="display: none;margin-left:150px; ">
+                  <p style="padding-top:20px;">File selected:&nbsp; <span id="file-name"></span></p>
+              </div>
+          
+            <button type="submit" class="mt-2 mb-5 ps-5 pe-5 pt-2 pb-2 bg-primary text-light" style="margin-left:100px;">UPLOAD</button>
+          </form>
+          </div>
+          <div class="col-md-3 " style="margin-top: 80px;margin-left:150px;">
+            <h1  style="font-family: Acme;font-size: 70px;" data-aos="flip-left">{{user.name}}</h1>
+            <p>{{user.email}}</p>
+          </div>
+          <hr>
+          <h2 style="text-align:center;margin-bottom: 30px;font-family: Acme;">Personal information</h2>
+          <div class="row">
+            <div class="col-md-5">
+          <p style="margin-left:80px;font-size: large;font-family: Acme;">Phone Number : </p>
+          <p style="margin-left:80px;font-size: large;font-family: Acme;">Country : </p>
+          <p style="margin-left:80px;font-size: large;font-family: Acme;">State : </p>
+          <p style="margin-left:80px;font-size: large;font-family: Acme;">Address : </p>
+          <p style="margin-left:80px;font-size: large;font-family: Acme;">Pin Code: </p>
+          <p style="margin-left:80px;font-size: large;font-family: Acme;">About : </p>
+          </div>
+          <div class="col-md-3" style="margin-left: 120px;">
+            <p>{{user.phoneno}}</p>
+            <p style="margin-top: 20px;" >{{user.Country}}</p>
+            <p style="margin-top: 20px;">{{user.State}}</p>
+            <p style="margin-top: 18px;">{{user.Address}}</p>
+            <p style="margin-top: 20px;">{{user.Pincode}}</p>
+            <p style="margin-top: 15px;padding-bottom: 20px;">{{user.detail}}</p>
+            </div>
+          </div>
+          
+        
+        </div>
+        <div class="col-md-3 "></div>
+      </div>
+      </div>
+
+      <script>
+        var fileInput = document.getElementById('file');
+        var fileSelectedMessage = document.getElementById('file-selected-message');
+        var fileNameContainer = document.getElementById('file-name');
+
+        fileInput.addEventListener('change', function() {
+            var fileName = fileInput.files[0].name;
+            fileNameContainer.textContent = fileName;
+            fileSelectedMessage.style.display = 'block';
+        });
+    </script>
+
+
+<script src="https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.js"></script>
+                  
+<script>
+    AOS.init()
+</script>                 
+
+</body>
+</html>
+{% endblock %}

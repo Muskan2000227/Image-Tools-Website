@@ -1,0 +1,295 @@
+{% extends 'side2.html' %}
+{% block content %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{%static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{%static 'icofont/icofont.min.css' %}">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.css">
+    <title>Document</title>
+</head>
+<body class="bg-primary-subtle">
+  
+
+   <h1 class="pt-3" style="text-align: center;font-size: 70px;" data-aos="zoom-in"><strong>OUR SERVICES</strong></h1>
+          
+            <div class="row " style="padding-top: 70px;background-image: url({%static 'images/color.png' %});background-size: cover;">
+                <div class="col-md-4 mb-5 " style="padding-left: 150px;background-image: url({%static 'images/tri.png' %});">
+                  <div class="card" style="width:23rem;border-radius:10%;">
+                    <div class="" style="height:200px;">
+                 <center><img src="{%static 'images/facereco.jpg' %}" class="card-img-top " data-aos="fade-down" alt="" style="height:200px; width: 100%;border-radius:10%;" ></center>
+                    </div>
+                    <div class="card-body pt-4 ps-5 pe-5 pb-5  ">
+                      <h5 class="card-title pb-3" style="text-align: center;">FACE RECOGNITION</h5>
+                      <p class="card-text pb-4">The face detection is a process of detecting faces in the images and it is a part of the indexing routine.</p>
+                      <a href="{% url 'face' %}">      <i class="icofont-arrow-right icofont-2x border p-3 rounded-circle " style="background:rgba(59, 154, 244, 0.5); position: absolute; margin-top: 18px; margin-left: 100px;"></i></a>
+                    </div>
+                  </div>
+                  <div class="card" style="width:23rem;margin-top:100px; border-radius:10%;">
+                    <div class="" style="height:200px;">
+                 <center><img src="{%static 'images/bright.jpg' %}" class="card-img-top " data-aos="fade-down" style="height:200px; width: 100%;border-radius:10%;" ></center>
+                    </div>
+                    <div class="card-body pt-4 ps-5 pe-5 pb-5  ">
+                      <h5 class="card-title pb-2" style="text-align: center;">BRIGHTNESS</h5>
+                      <p class="card-text ">Brightness refers to how much light appears to shine from something. This is a different perception than lightness, which is how light something appears. </p>
+                  <a href="{% url 'rem' %}"><i class="icofont-arrow-right icofont-2x border p-3 rounded-circle " style="background:rgba(59, 154, 244, 0.5); position: absolute; margin-top: 18px; margin-left: 100px;"></i></a>
+                      
+                    </div>
+                  </div>
+                  <div class="card" style="width:23rem;margin-top:100px;border-radius:10%;">
+                    <div class="" style="height:200px;">
+                 <center><img src="{%static 'images/grey.jpg' %}" class="card-img-top " data-aos="fade-down" alt="" style="height:200px; width: 100%;border-radius:10%;" ></center>
+                    </div>
+                    <div class="card-body pt-4 ps-5 pe-5 pb-5  ">
+                      <h5 class="card-title pb-2" style="text-align: center;">GRAY SCALING</h5>
+                      <p class="card-text ">Gray-scaling is the process of convertinga continuous-tone image to an image that a computer can manipulate </p>
+                <a href="{% url 'grey' %}"><i class="icofont-arrow-right icofont-2x border p-3 rounded-circle " style="background:rgba(59, 154, 244, 0.5); position: absolute; margin-top: 18px; margin-left: 100px;"></i></a>
+                      
+                    </div>
+                  </div>
+                  <div class="card" style="width:23rem;margin-top:100px;border-radius:10%;">
+                    <div class="" style="height:200px;">
+                 <center><img src="{%static 'images/resize.jpg' %}" class="card-img-top " data-aos="fade-down" alt="" style="height:200px; width: 100%;border-radius:10%;" ></center>
+                    </div>
+                    <div class="card-body pt-4 ps-5 pe-5 pb-5  ">
+                      <h5 class="card-title pb-2" style="text-align: center;">RESIZE</h5>
+                      <p class="card-text ">You can change the image's size without changing the amount of data in that image. </p>
+                <a href="{% url 'resize' %}"><i class="icofont-arrow-right icofont-2x border p-3 rounded-circle " style="background:rgba(59, 154, 244, 0.5); position: absolute; margin-top: 18px; margin-left: 100px;"></i></a>
+                      
+                    </div>
+                  </div>
+                  <div class="card" style="width:23rem;margin-top:100px;border-radius:10%;">
+                    <div class="" style="height:200px;">
+                 <center><img src="{%static 'images/border.jpg' %}" class="card-img-top " data-aos="fade-down" alt="" style="height:200px; width: 100%;border-radius:10%;" ></center>
+                    </div>
+                    <div class="card-body pt-4 ps-5 pe-5 pb-5  ">
+                      <h5 class="card-title pb-2" style="text-align: center;">ADDING BORDER</h5>
+                      <p class="card-text pb-3"> An image border is an outline that frames a picture. Bordered images tend to look more finished than borderless images.  </p>
+                      <a href="{% url 'scale' %}">  <i class="icofont-arrow-right icofont-2x border p-3 rounded-circle " style="background:rgba(59, 154, 244, 0.5); position: absolute; margin-top: 18px; margin-left: 100px;"></i></a>
+                      
+                    </div>
+                  </div>
+                  <div class="card" style="width:23rem;margin-top:100px;border-radius:10%;">
+                    <div class="" style="height:200px;">
+                 <center><img src="{%static 'images/fliph.jpg' %}" class="card-img-top " data-aos="fade-down" alt="" style="height:200px; width: 100%;border-radius:10%;" ></center>
+                    </div>
+                    <div class="card-body pt-4 ps-5 pe-5 pb-5  ">
+                      <h5 class="card-title pb-2" style="text-align: center;">FLIP</h5>
+                      <p class="card-text ">Flipping a selection converts it into a floating selection, leaving the original layer unchanged. To mirror a selection or layer.</p>
+                <a href="{% url 'flip' %}"><i class="icofont-arrow-right icofont-2x border p-3 rounded-circle " style="background:rgba(59, 154, 244, 0.5); position: absolute; margin-top: 18px; margin-left: 100px;"></i></a>
+                      
+                    </div>
+                  </div>
+                  <div class="card" style="width:23rem;margin-top:100px;border-radius:10%;">
+                    <div class="" style="height:200px;">
+                 <center><img src="{%static 'images/compress.jpg' %}" class="card-img-top " data-aos="fade-down" alt="" style="height:200px; width: 100%;border-radius:10%;" ></center>
+                    </div>
+                    <div class="card-body pt-4 ps-5 pe-5 pb-3  ">
+                      <h5 class="card-title pb-2" style="text-align: center;">COMPRESS IMAGES</h5>
+                      <p class="card-text pb-3">Choose multiple JPG, PNG images and compress them in seconds for free! You can shrink with ease in just a few clicks!</p>
+                      <a href="{% url 'gif' %}"> <i class="icofont-arrow-right icofont-2x border p-3 rounded-circle " style="background:rgba(59, 154, 244, 0.5); position: absolute; margin-top:-17px; margin-left: 100px;"></i></a>
+    
+                    </div>
+                  </div>
+                  <div class="card" style="width:23rem;margin-top:100px;border-radius:10%;">
+                    <div class="" style="height:200px;">
+                 <center><img src="{%static 'images/pngjpg.png' %}" class="card-img-top " data-aos="fade-down" alt="" style="height:200px; width: 100%;border-radius:10%;" ></center>
+                    </div>
+                    <div class="card-body pt-4 ps-5 pe-5 pb-3  ">
+                      <h5 class="card-title pb-2" style="text-align: center;">PNG to JPG</h5>
+                      <p class="card-text pb-5">Our PNG to JPG online tool is fast, reliable, easy-to-use and FREE.  </p>
+                      <a href="{% url 'jpg' %}"> <i class="icofont-arrow-right icofont-2x border p-3 rounded-circle " style="background:rgba(59, 154, 244, 0.5); position: absolute; margin-top:-17px; margin-left: 100px;"></i></a>
+    
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-5 " style="padding-left: 100px;background-image: url({%static 'images/tri.png' %});">
+                    <div class="card" style="width:23rem;border-radius:10%;">
+                        <div class="" style="height:200px;">
+                     <center><img src="{%static 'images/imgtext.jpg' %}" class="card-img-top " data-aos="fade-down" alt="" style="height:200px; width: 100%;border-radius:10%;" ></center>
+                        </div>
+                        <div class="card-body pt-4 ps-5 pe-5 pb-5 ">
+                          <h5 class="card-title pb-2" style="text-align: center;">IMAGE TO TEXT </h5>
+                          <p class="card-text pb-1">Image to text converter is a free online image OCR tool that allows you to extract text from image at one click. It converts picture to text accurately.</p>
+                          <a href="{% url 'imgtxt' %}"><i class="icofont-arrow-right icofont-2x border p-3 rounded-circle " style="background:rgba(59, 154, 244, 0.5); position: absolute; margin-top: 15px; margin-left: 100px;"></i></a>
+                        </div>
+                      </div>
+                      <div class="card" style="width:23rem;margin-top:100px ;border-radius:10%;">
+                        <div class="" style="height:200px;">
+                     <center><img src="{%static 'images/txtimg.png' %}" class="card-img-top " data-aos="fade-down" alt="" style="height:200px; width: 100%;border-radius:10%;" ></center>
+                        </div>
+                        <div class="card-body pt-4 ps-5 pe-5 pb-5">
+                          <h5 class="card-title pb-2" style="text-align: center;">TEXT TO IMAGE</h5>
+                          <p class="card-text ">A text-to-image model is a machine learning model which takes an input natural language description and produces an image matching that description.</p>
+                          <a href="{% url 'txt' %}">  <i class="icofont-arrow-right icofont-2x border p-3 rounded-circle " style="background:rgba(59, 154, 244, 0.5); position: absolute; margin-top: 15px; margin-left: 100px;"></i></a>
+                        </div>
+                      </div>
+                      <div class="card" style="width:23rem;margin-top:100px;border-radius:10%;">
+                        <div class="" style="height:200px;">
+                     <center><img src="{%static 'images/rotate.jpg' %}" class="card-img-top " data-aos="fade-down" alt="" style="height:200px; width: 100%;border-radius:10%;" ></center>
+                        </div>
+                        <div class="card-body pt-4 ps-5 pe-5 pb-5  ">
+                          <h5 class="card-title pb-2" style="text-align: center;">ROTATING</h5>
+                          <p class="card-text pb-4 ">Rotate is a feature that lets you turn an image in a clockwise or counterclockwise direction. </p>
+                          <a href="{% url 'rotate' %}"> <i class="icofont-arrow-right icofont-2x border p-3 rounded-circle " style="background:rgba(59, 154, 244, 0.5); position: absolute; margin-top: 18px; margin-left: 100px;"></i></a>
+                         
+                        </div>
+                      </div>
+                      <div class="card" style="width:23rem;margin-top:100px;border-radius:10%;">
+                        <div class="" style="height:200px;">
+                     <center><img src="{%static 'images/shift.jpg' %}" class="card-img-top " data-aos="fade-down" alt="" style="height:200px; width: 100%;border-radius:10%;" ></center>
+                        </div>
+                        <div class="card-body pt-4 ps-5 pe-5 pb-4  ">
+                          <h5 class="card-title pb-2" style="text-align: center;">SHIFTING</h5>
+                          <p class="card-text pb-4">Image shifting is simply shifting each pixel of the image to a new position. </p>
+                          <a href="{% url 'shift' %}"><i class="icofont-arrow-right icofont-2x border p-3 rounded-circle " style="background:rgba(59, 154, 244, 0.5); position: absolute; margin-top: -10px; margin-left: 100px;"></i></a>
+                          
+                        </div>
+                      </div>
+                      <div class="card" style="width:23rem;margin-top:100px;border-radius:10%;">
+                        <div class="" style="height:200px;">
+                     <center><img src="{%static 'images/detection.jpg' %}" class="card-img-top " data-aos="fade-down" alt="" style="height:200px; width: 100%;border-radius:10%;" ></center>
+                        </div>
+                        <div class="card-body pt-4 ps-5 pe-5 pb-4  ">
+                          <h5 class="card-title pb-2" style="text-align: center;">EDGE DETECTION</h5>
+                          <p class="card-text ">Edge detection is a technique of image processing used to identify points in a digital image with discontinuities, simply to say, sharp changes in the image brightness.  </p>
+                          <a href="{% url 'edge' %}">     <i class="icofont-arrow-right icofont-2x border p-3 rounded-circle " style="background:rgba(59, 154, 244, 0.5); position: absolute; margin-top: -8px; margin-left: 100px;"></i></a>
+                          
+                        </div>
+                      </div>
+
+                      <div class="card" style="width:23rem;margin-top:100px;border-radius:10%;">
+                        <div class="" style="height:200px;">
+                     <center><img src="{%static 'images/barco.jpg' %}" data-aos="fade-down" class="card-img-top " alt="" style="height:200px; width: 100%;border-radius:10%;" ></center>
+                        </div>
+                        <div class="card-body pt-4 ps-5 pe-5 pb-4  ">
+                          <h5 class="card-title pb-2" style="text-align: center;">BARCODE</h5>
+                          <p class="card-text" style="padding-bottom:60px;">Barcodes are applied to products to quickly identify them </p>
+                          <a href="{% url 'barcode' %}"><i class="icofont-arrow-right icofont-2x border p-3 rounded-circle " style="background:rgba(59, 154, 244, 0.5); position: absolute; margin-top: -8px; margin-left: 100px;"></i></a>
+                          
+                        </div>
+                      </div>
+                      <div class="card" style="width:23rem;margin-top:100px ;border-radius:10%;">
+                        <div class="" style="height:200px;">
+                     <center><img src="{%static 'images/txtimg.png' %}" data-aos="fade-down" class="card-img-top " alt="" style="height:200px; width: 100%;border-radius:10%;" ></center>
+                        </div>
+                        <div class="card-body pt-4 ps-5 pe-5 pb-5">
+                          <h5 class="card-title pb-2" style="text-align: center;">Add text to image</h5>
+                          <p class="card-text pb-3 ">Adding text to Image becomes easier with this tool by providing necessary details</p>
+                          <a href="{% url 'add' %}">  <i class="icofont-arrow-right icofont-2x border p-3 rounded-circle " style="background:rgba(59, 154, 244, 0.5); position: absolute; margin-top: 15px; margin-left: 100px;"></i></a>
+                        </div>
+                      </div>
+                      <div class="card" style="width:23rem;margin-top:100px;border-radius:10%;">
+                        <div class="" style="height:200px;">
+                     <center><img src="{%static 'images/jpgpng.png' %}" data-aos="fade-down" class="card-img-top " alt="" style="height:200px; width: 100%;border-radius:10%;" ></center>
+                        </div>
+                        <div class="card-body pt-4 ps-5 pe-5 pb-3 ">
+                          <h5 class="card-title pb-2" style="text-align: center;">JPG to PNG</h5>
+                          <p class="card-text pb-5 ">Our JPG to PNG online tool is fast, reliable, easy-to-use and FREE.  </p>
+                          <a href="{% url 'png' %}"> <i class="icofont-arrow-right icofont-2x border p-3 rounded-circle " style="background:rgba(59, 154, 244, 0.5); position: absolute; margin-top:-17px; margin-left: 100px;"></i></a>
+        
+                        </div>
+                      </div>
+
+                </div>
+                <div class="col-md-4 mb-5 ps-5 " style="background-image: url({%static 'images/tri.png' %});">
+                    <div class="card" style="width:23rem;border-radius:10%;">
+                        <div class="" style="height:200px;">
+                     <center><img src="{%static 'images/cartoon.jpg' %}" data-aos="fade-down" class="card-img-top " alt="" style="height:200px; width: 100%;border-radius:10%;" ></center>
+                        </div>
+                        <div class="card-body pt-4 ps-5 pe-5 pb-5 ">
+                          <h5 class="card-title pb-2" style="text-align: center;">CARTOONIFY</h5>
+                          <p class="card-text  ">Transform your photo into a cartoon with a single click! Select from several cartoon effects and filters that'll turn your image into a work of art.</p>
+                          <a href="{% url 'cartoon' %}"> <i class="icofont-arrow-right icofont-2x border p-3 rounded-circle " style="background:rgba(59, 154, 244, 0.5); position: absolute; margin-top: 15px; margin-left: 100px;"></i></a>                        </div>
+                      </div>
+        
+                      <div class="card" style="width:23rem;margin-top:100px;border-radius:10%;">
+                        <div class="" style="height:200px;">
+                     <center><img src="{%static 'images/blur.jpg' %}" data-aos="fade-down" class="card-img-top " alt="" style="height:200px; width: 100%;border-radius:10%;" ></center>
+                        </div>
+                        <div class="card-body pt-4 ps-5 pe-5 pb-5 ">
+                          <h5 class="card-title pb-2" style="text-align: center;">BLUR IMAGE</h5>
+                          <p class="card-text pb-5 ">Blurring an image is a process that makes the image less sharp and reduces its level of detail.</p>
+                          <a href="{% url 'blur' %}">    <i class="icofont-arrow-right icofont-2x border p-3 rounded-circle " style="background:rgba(59, 154, 244, 0.5); position: absolute; margin-top: 15px; margin-left: 100px;"></i></a>
+                        </div>
+                      </div>
+                      <div class="card" style="width:23rem;margin-top:100px;border-radius:10%;">
+                        <div class="" style="height:200px;">
+                     <center><img src="{%static 'images/contrast.png' %}" data-aos="fade-down" class="card-img-top " alt="" style="height:200px; width: 100%;border-radius:10%;" ></center>
+                        </div>
+                        <div class="card-body pt-4 ps-5 pe-5 pb-4  ">
+                          <h5 class="card-title pb-2" style="text-align: center;">Contrast</h5>
+                          <p class="card-text ">contrast refers to the amount of color or grayscale differentiation that exists between various image features in both analog and digital images.</p>
+                          <a href="{% url 'contrast' %}">              <i class="icofont-arrow-right icofont-2x border p-3 rounded-circle " style="background:rgba(59, 154, 244, 0.5); position: absolute; margin-top: -10px; margin-left: 100px;"></i></a>
+                          
+                        </div>
+                      </div>
+                      <div class="card" style="width:23rem;margin-top:100px;border-radius:10%;">
+                        <div class="" style="height:200px;">
+                     <center><img src="{%static 'images/contour.png' %}" data-aos="fade-down" class="card-img-top " alt="" style="height:200px; width: 100%;border-radius:10%;" ></center>
+                        </div>
+                        <div class="card-body pt-4 ps-5 pe-5 pb-3  ">
+                          <h5 class="card-title pb-2" style="text-align: center;">Contour</h5>
+                          <p class="card-text ">Image contouring is process of identifying structural outlines of objects in an image which in turn can help us identify shape of the object. </p>
+                          <a href="{% url 'contour' %}"> <i class="icofont-arrow-right icofont-2x border p-3 rounded-circle " style="background:rgba(59, 154, 244, 0.5); position: absolute; margin-top:-17px; margin-left: 100px;"></i></a>
+        
+                        </div>
+                      </div>
+                      <div class="card mb-5" style="width:23rem;margin-top:100px;border-radius:10%;">
+                        <div class="" style="height:200px;">
+                     <center><img src="{%static 'images/enhance.jpg' %}" data-aos="fade-down" class="card-img-top " alt="" style="height:200px; width: 100%;border-radius:10%;" ></center>
+                        </div>
+                        <div class="card-body pt-4 ps-5 pe-5 pb-5 ">
+                          <h5 class="card-title pb-1" style="text-align: center;">IMAGE ENHANCEMENT</h5>
+                          <p class="card-text ">Image enhancement is the process of adjusting digital images so that the results are more suitable for display or further image analysis.  </p>
+                          <a href="{% url 'enhance' %}">    <i class="icofont-arrow-right icofont-2x border p-3 rounded-circle " style="background:rgba(59, 154, 244, 0.5); position: absolute; margin-top: 18px; margin-left: 100px;"></i></a>
+                          
+                        </div>
+                      </div>
+                      <div class="card" style="width:23rem;margin-top:100px;border-radius:10%;">
+                        <div class="" style="height:200px;">
+                     <center><img src="{%static 'images/qrcode.png' %}" data-aos="fade-down" class="card-img-top " alt="" style="height:200px; width: 100%;border-radius:10%;" ></center>
+                        </div>
+                        <div class="card-body pt-4 ps-5 pe-5 pb-4  ">
+                          <h5 class="card-title pb-2" style="text-align: center;">QRCODE</h5>
+                          <p class="card-text pb-4 ">It is a machine-scannable image that can instantly be read using scanner. </p>
+                          <a href="{% url 'qrcode' %}"><i class="icofont-arrow-right icofont-2x border p-3 rounded-circle " style="background:rgba(59, 154, 244, 0.5); position: absolute; margin-top: -8px; margin-left: 100px;"></i></a>
+                          
+                        </div>
+                      </div>
+
+                      <div class="card" style="width:23rem;margin-top:100px;border-radius:10%;">
+                        <div class="" style="height:200px;">
+                     <center><img src="{%static 'images/vidgif.png' %}" data-aos="fade-down" class="card-img-top " alt="" style="height:200px; width: 100%;border-radius:10%;" ></center>
+                        </div>
+                        <div class="card-body pt-4 ps-5 pe-5 pb-5  ">
+                          <h5 class="card-title pb-2" style="text-align: center;">VIDEO TO GIF</h5>
+                          <p class="card-text pb-5">Convert video to gif easily  </p>
+           <a href="{% url 'video' %}"><i class="icofont-arrow-right icofont-2x border p-3 rounded-circle " style="background:rgba(59, 154, 244, 0.5); position: absolute; margin-top: 18px; margin-left: 100px;"></i></a>
+                          
+                        </div>
+                      </div>
+
+                      
+
+
+                  </div>
+                  <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js'  integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+                  
+                  <script src="https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.js"></script>
+                  
+                  <script>
+                      AOS.init()
+                  </script>                 
+
+                    
+
+
+
+
+</body>
+</html>
+{% endblock %}

@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+<section class=" text-dark bg-primary-subtle" style="background-image: url({%static 'images/color1.png' %});background-size: cover;">
+    <div class="row" style="background-image: url({%static 'images/tri.png' %});"> 
+        <div class="col-md-12" >
+        <center><h1 style="margin-top:50px;padding-top:50px;padding-bottom: 100px;">BLOGS</h1>
+        
+        </div>
+        
+    </section>
+    
+    <div class="container">
+       
+        <div class="row mt-5">
+            {% for i in data%}
+            
+            <div class="col-md-4">
+    <div class="card" style="width: 22rem;margin-bottom:50px;border-radius: 5%;">
+        <img src="{{i.Image.url}}" class="card-img-top" alt="..." height="200px" style="object-fit: cover;">
+        <div class="card-body">
+          <h5 class="card-title" >{{i.title}}</h5>
+          <p class="card-text">{{i.description|truncatechars:70}}</p>
+          <p class="card-text " style="margin-left: 200px;" ><b>{{i.Writter}}</b></p>
+          
+
+          <a href="{% url 'detailblog' id=i.id %}" class="btn btn-danger">Read more</a>
+        </div>
+        </div>
+      </div>
+      {% endfor %}
+
+      </div>
+      </div>
+
+{% endblock %}

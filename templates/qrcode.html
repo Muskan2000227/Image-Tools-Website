@@ -1,0 +1,78 @@
+{% extends 'side2.html' %}
+{% block content%}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{%static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{%static 'icofont/icofont.min.css' %}"> 
+    <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <style>
+        
+    </style>
+</head>
+<body style="background-color:#E4E9F7;">
+    <script src="{% static 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js' %}" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    
+<section style="padding-top: 50px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p class="text-danger" style="font-size: 40px; margin-top: 10px; text-align: center; margin-bottom: 30px;font-family: 'Kalam', cursive;border-radius: 5%;">QR Code Generator</p>
+                <p style="font-family: 'Poppins', sans-serif;margin-bottom: 30px;font-size: medium;">It is a machine-scannable image that can instantly be read using a scanner.Generate qr codes here!</p>
+                <form method="POST" action="" enctype="multipart/form-data">
+                    {% csrf_token %}
+                        
+
+                    <form action="/generate_qr_code" method="POST">
+                        <label for="qr_data">QR Code Data:</label>
+                        <input type="text" id="qr_data" name="qr_dat" required><br><br>
+
+
+    <button type="submit" class="bg-danger" style="margin-left:200px;margin-top: 100px;padding: 10px;font-size: 25px;border-radius: 5%;width:200px;margin-bottom: 50px;">GENERATE</button>
+      </form>      </div>
+      <div class="col-md-6">
+        {%  if msg == 1 %}
+<img src="{% static 'qrcode.png' %}"   height="400px;" width="650px;" style="margin-bottom: 50px;">
+
+<button type="submit" class="bg-danger" style="margin-left:200px;
+                    padding: 10px;font-size: 25px;border-radius: 5%;width:300px;margin-bottom: 50px;"><a href="{% static 'qrcode.png' %}" download style="color:white;text-decoration: none;">Download Image</a></button></center>
+
+{% else %}
+<img src="{% static 'images/qr.jpg' %}"   height="400px;" width="650px;" style="margin-bottom: 80px;">
+
+
+
+{% endif %}
+
+
+</div>
+</div>
+</div>
+
+
+
+</section>
+
+    
+    
+
+    <script>
+        var fileInput = document.getElementById('file');
+        var fileSelectedMessage = document.getElementById('file-selected-message');
+        var fileNameContainer = document.getElementById('file-name');
+
+        fileInput.addEventListener('change', function() {
+            var fileName = fileInput.files[0].name;
+            fileNameContainer.textContent = fileName;
+            fileSelectedMessage.style.display = 'block';
+        });
+    </script>
+    
+</body>
+</html>
+{% endblock %}

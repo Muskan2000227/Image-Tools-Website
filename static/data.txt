@@ -1,0 +1,5 @@
+The text extractor will allow you to extract text from any image. You may
+upload an image or and the tool will pull text from the image.lt allows
+you to extract text from image at one click. It converts picture to text
+accurately.
+

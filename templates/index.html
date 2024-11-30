@@ -1,0 +1,580 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link rel="stylesheet" href="{%static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{%static 'icofont/icofont.min.css' %}"> 
+    <link href='https://fonts.googleapis.com/css?family=Acme' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.css">
+</head>
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    
+     
+      <Section style="background-image: url({%static 'images/color.png' %});background-size: cover;" class="pb-5">
+        
+        <div class="container">
+                   <div class="row" style="background-image: url({%static 'images/tri.png' %});">
+        <div class="col-md-7">
+          
+          <img src="{%static 'images/tri.png' %}" class="position-absolute">
+            <h5 class="text-danger pb-3" style="padding-top: 150px;font-family: 'Kalam', cursive;">Photo Editing Company</h5>
+            <h1 class="pb-4" style="font-family: 'Poppins', sans-serif;">Professional Clipping Path<br> & Photo Editing Service</h1>
+            <p style="font-size:18px;" >We provide 100% handmade photo editing services to use . So</p> <p style="font-size:18px;">you will get great quality services always try to provide your<p style="font-size:18px;"> content within minute  or less.</p></p>
+        </div>
+        <div class="col-md-5  pt-5 " >
+          
+
+            <img src="{%static 'images/main1.png' %}"  data-aos="zoom-in-up"  width="500px;" class="mt-5">
+           
+            
+                
+        </div>
+       </div>
+       </div>
+      </Section>
+      
+
+      <section style="background-image: url({%static 'images/color1.png' %});background-size: cover;">
+        <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+           
+            <img src="{%static 'images/team.png' %}" data-aos="zoom-out"  style="padding-top: 150px;width:450px;">
+            <img src="{%static 'images/sec31.png' %}"  style="width:100px;" >
+          </div>
+          <div class="col-md-6" style="padding-top:120px;padding-bottom: 150px;">
+            
+            <h5 class="text-danger" style="font-family: 'Kalam', cursive;">About us</h5>
+            <img src="{%static 'images/tri.png' %}" class="position-absolute">
+            <h1 class="pb-3" style="font-family: 'Poppins', sans-serif;"><p>We're Your Virtual Photo</p><p>Editing & Design Studio</p></h1>
+             <b><p style="font-size:20px;">Welcome to our Image Editing Website! </p><p style="font-size:20px;"> </p><p style="font-size:20px;margin-bottom:40px;">  </p></b>
+             <p style="font-size:20px;"> At our website, you'll find a wide range of features and services<br>  to enhance and transform your images.<br><br>Our website is providing an intuitive interface and powerful tools to bring your creative visions to life. Enjoy exploring the world of image editing with us! </p>
+            
+          </div>
+        </div>
+        </div>
+        
+      </section>
+
+      <Section class="bg-primary-subtle pb-5" style="width:100%;height:100%;">
+        <div class="container">
+        <h5 class="pt-5 text-danger" style="font-family: 'Kalam', cursive;">Our Services</h5>
+        <h2><p style="font-family: 'Poppins', sans-serif;">Our Most Popular</p>
+         <p style="font-family: 'Poppins', sans-serif;padding-bottom: 50px;;">Photo-Editing Services</p></h2>
+         <div class="row">
+          <div class="col-md-4 mb-5">
+            <div class="card" style="width:20rem;" data-aos="zoom-out">
+              <div class="" style="height:200px;background-color: blueviolet;">
+           <center><img src="{%static 'images/fliph.jpg' %}" class="card-img-top" alt="" style="height:200px; width: 100%;" ></center>
+              </div>
+              <div class="card-body ">
+                <h5 class="card-title" style="font-family: 'Poppins', sans-serif;">FLIP IMAGES</h5>
+                <p class="card-text pb-5">Flipping a selection converts it into a floating selection, leaving the original layer unchanged. To mirror a selection or layer.</p>
+    <a href="{% url 'Login' %}"  ><i class="icofont-arrow-right icofont-2x border p-3 rounded-circle " style="background:rgb(16, 115, 208,0.5); position: absolute; margin-top: -15px; margin-left: 100px;"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-5">
+            <div class="card" style="width:20rem;" data-aos="zoom-out">
+              <div class="bg-danger" style="height:200px;">
+           <center><img src="{%static 'images/grey.jpg' %}" class="card-img-top" alt="" style="height:200px; width: 100%;" ></center>
+              </div>
+              <div class="card-body ">
+                <h5 class="card-title" style="font-family: 'Poppins', sans-serif;">GRAY SCALING</h5>
+                <p class="card-text pb-5">Gray-scaling is the process of convertinga continuous-tone image to an image that a computer can manipulate</p>
+                <a href="{% url 'Login' %}"  ><i class="icofont-arrow-right icofont-2x border p-3 rounded-circle " style="background:rgb(16, 115, 208,0.5); position: absolute; margin-top: -15px; margin-left: 100px;"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-5">
+            <div class="card" style="width:20rem;" data-aos="zoom-out">
+              <div class="bg-warning" style="height:200px;">
+           <center><img src="{%static 'images/rotate.jpg' %}" class="card-img-top " alt="" style="height:200px; width: 100%;" ></center>
+              </div>
+              <div class="card-body ">
+                <h5 class="card-title" style="font-family: 'Poppins', sans-serif;">ROTATING</h5>
+                <p class="card-text pb-5">Rotate is a feature that lets you turn an image in a clockwise or counterclockwise direction. </p>
+                <a href="{% url 'Login' %}"  > <i class="icofont-arrow-right icofont-2x border p-3 rounded-circle " style="background:rgba(59, 154, 244, 0.5); position: absolute; margin-top: 10px; margin-left: 100px;"></i></a>
+              <br>
+              </div>
+            </div>
+          </div>
+         </div>
+        </div>
+      </Section>
+      
+<section class="pt-5">
+ <center><h1 style="font-family: 'Kalam', cursive;" >How it works</h1></center>
+  <div class="container">
+   <div class="row">
+    <div class="col-md-3 pt-5">
+      <i class="icofont-brand-designfloat icofont-2x border p-3 rounded-circle" style="background:rgba(239, 20, 27, 0.5);"  data-aos="flip-up" ></i>
+    <h5 class="pt-5" style="font-family: 'Poppins', sans-serif;"  data-aos="flip-up" >01.SELECT EDITING OPTION</h5>
+    <p style="font-size:15px;">Browse through the editing tools and<br> features available on our website</p><br><br><br>
+    <i class="icofont-sand-clock icofont-2x border p-3 rounded-circle" data-aos="flip-up" style="background:rgba(239, 144, 20, 0.5);"></i>
+    <h5 class="pt-5" style="font-family: 'Poppins', sans-serif;" data-aos="flip-up">04.QUICK RESPONSE</h5>
+    <p style="font-size:15px;">After uploading you will get a quick<br> response.</p>
+    </div>
+    <div class="col-md-3 pt-5">
+      <i class="icofont-file-image icofont-2x border p-3 rounded-circle"  style="background:rgba(23, 183, 236, 0.5);"></i>
+    <h5 class="pt-5" style="font-family: 'Poppins', sans-serif;" data-aos="flip-up">02.CHOOSE IMAGE</h5>
+    <p style="font-size:15px;">Click on the select file option<br> to choose image.</p><br><br><br>
+    <i class="icofont-download icofont-2x border p-3 rounded-circle" data-aos="flip-up" style="background:rgba(239, 20, 166, 0.5);"></i>
+    <h5 class="pt-5" style="font-family: 'Poppins', sans-serif;" data-aos="flip-up">05.DOWNLOAD IMAGE</h5>
+    <p style="font-size:15px;">Click on download image button<br> to download it.</p>
+    </div>
+    <div class="col-md-3 pt-5">
+      <i class="icofont-file-image icofont-2x border p-3 rounded-circle" data-aos="flip-up"  style="background:rgb(138, 43, 226,0.5)"></i>
+    <h5 class="pt-5" style="font-family: 'Poppins', sans-serif;" data-aos="flip-up">03.UPLOAD IMAGE</h5>
+    <p style="font-size:15px;">Now you have to click on upload<br> button to upload image</p><br><br><br>
+    <i class="icofont-comment icofont-2x border p-3 rounded-circle" data-aos="flip-up" style="background:rgba(239, 20, 166, 0.5);"></i>
+    <h5 class="pt-5" style="font-family: 'Poppins', sans-serif;" data-aos="flip-up">06.GIVE US REVIEW</h5>
+    <p style="font-size:15px;"> You can download the edited image to your device for further use.</p>
+    </div>
+    <div class="col-md-3">
+     
+      <img src="{%static 'images/rocket.png' %}" style="width:350px;height:500px">
+    </div>
+   </div>
+   </div>
+</section>
+
+
+
+<Section>
+  <div class="container"  style="background-image: url('preview.png');">
+    <div class="row pt-5">
+      <div class="col-md-6">
+        <video src="{%static 'images/enhance.mp4' %}" control muted autoplay loop data-aos="zoom-out" style="width:100%"></video>
+      </div>
+      <div class="col-md-6 pt-5 ps-5">
+        <h5 class="text-danger" style="font-family: 'Kalam', cursive;padding-top:50px;">Before & After</h5>
+            <img src="{%static 'images/tri.png' %}" class="position-absolute">
+            <img src="{%static 'images/polygon.png' %}" class="position-absolute " style="padding-left: 350px;padding-top: 100px;;">
+            
+            <h1 class="pb-2 mt-5" style="font-family: 'Poppins', sans-serif;"><p>Our Most Popular Photo-Editing Services</p></h1>
+             <b><p style="font-size:20px;">Image enhancement is the process of </p><p style="font-size:20px;">adjusting digital images so that the  </p><p style="font-size:20px;">results are more suitable for display or further image analysis. </p></b>
+             <p style="font-size:18px;margin-top: 50px;"> You can also try our other image editing tools to<br> bring your creative visions to life. </p>
+            
+      </div>
+    </div>
+  </div>
+</Section>
+
+
+<section class="bg-light" style="background-image: url('tri.png');background-size: cover;" >
+  <div class="container" style="padding-bottom:100px;padding-top: 100px;">
+    <div class="row bg-primary-subtle ps-5 " style="border-radius: 10px;padding-top:100px;padding-bottom: 100px;">
+      <div class="col-md-7">
+        <img src="{%static 'images/tri.png' %}" class="position-absolute">
+        <img src="{%static 'images/poly2.png' %}" class="position-absolute pt-5">
+    <h2 style="font-family: 'Poppins', sans-serif;" data-aos="flip-up">Have any Projects in Mind ?</h2>
+  </div>
+  <div class="col-md-5">
+    <img src="{%static 'images/tri.png' %}" class="position-absolute">
+  <h1><i class="icofont-phone icofont-1x border p-2 rounded-circle" style="background:rgba(43, 153, 226, 0.5)"></i>  +91 7717399046</h1>
+  <img src="{%static 'images/poly2.png' %}" class="position-absolute pt-5">
+  
+  </div>
+  </div>
+  </div>
+</section>
+<section>
+<div class="container">
+  <h5 class="mt-5 text-danger" style="text-align:center;font-family: 'Kalam', cursive;">Have any question</h5>
+      <h1 class="text-dark " style="text-align:center;margin-bottom:50px;font-family: 'Poppins', sans-serif;">Frequently Asked Questions</h1>
+  <div class="row">
+      <div class="col-md-12  mb-5">
+          {% for i in data %}
+          <details class="border p-2 mt-3 shadow bg-light rounded">
+              <summary class=" text-danger fs-4">{{i.ques}}</summary>
+              <p class="border-top p-3 fs-5">{{i.ans}}</p>
+          </details>
+          {% endfor %}
+      </div>
+  </div>
+</div>
+
+</section>
+<!--<Section style="background-image: url('{%static 'images/color1.png' %});background-size: cover;">
+      <h5 class="mt-5 text-danger" style="text-align:center;font-family: 'Kalam', cursive;">Have any question</h5>
+      <h1 class="text-dark " style="text-align:center;margin-bottom:70px;font-family: 'Poppins', sans-serif;">Frequently Asked Questions</h1>
+      <div class="accordion " id="accordionPanelsStayOpenExample" style="width:70%;margin-left:250px;">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne" style="font-family: 'Poppins', sans-serif;">
+              Accordion Item #1
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+            <div class="accordion-body">
+              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div><br><br>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo" style="font-family: 'Poppins', sans-serif;">
+              Accordion Item #2
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div><br><br>
+        
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree" style="font-family: 'Poppins', sans-serif;">
+              Accordion Item #3
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div><br><br>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour" style="font-family: 'Poppins', sans-serif;">
+              Accordion Item #4
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <strong>This is the fourth item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div><br><br>
+
+        <div class="accordion-item mb-5">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFifth" aria-expanded="false" aria-controls="panelsStayOpen-collapseFifth" style="font-family: 'Poppins', sans-serif;">
+              Accordion Item #5
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseFifth" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <strong>This is the fifth item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div><br><br>
+      </div>
+
+      
+    
+</Section>-->
+
+<section  style="background-image: url({%static 'images/color1.png' %});background-size: cover;padding-bottom:100px;">
+  <div class="container">
+
+  <h5 class="mt-5 text-danger" style="text-align:center;font-family: 'Kalam', cursive;"  data-aos="zoom-out">Client's Feedback</h5>
+  <h1 class="text-dark " style="text-align:center;margin-bottom:70px;font-family: 'Poppins', sans-serif;">Explore Clients Review</h1>
+  <div class="row"> 
+    <div class="col-md-4 mb-5">
+      <div class="card" style="width:25rem;">
+        <div class="" style="height:200px;background-color: white;">
+      <p style="padding-left:10px;padding-top:20px;;">
+        <i class="icofont-star icofont-2x text-warning"  ></i>
+        <i class="icofont-star icofont-2x text-warning"  ></i>
+        <i class="icofont-star icofont-2x text-warning"  ></i>
+        <i class="icofont-star icofont-2x text-warning"  ></i>
+        <i class="icofont-star icofont-2x text-warning"  ></i>
+      </p>
+       <h5 class="mb-4 ps-3 mt-3" style="color:blue;font-family: 'Poppins', sans-serif;">Excellent</h5>
+       <p class="ps-3 pe-5" > I must say it's incredible! The tools are easy to use, and the results are stunning. I love how I can quickly crop, adjust colors effortlessly.</p>
+        </div>
+        <div class="card-body" style="background-color: rgb(128, 128, 128,0.1);margin-top:50px;">
+          <div class="row">
+            <div class="col-md-3">
+         <img src="{%static 'images/anna.png' %}" data-aos="zoom-out"  alt="" style="width:80px;padding-right:10px;">
+         </div> 
+         <div class="col-md-9">
+          <h3>Anna Jackson</h3>
+          
+         </div>
+        </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-5">
+      <div class="card" style="width:25rem;">
+        <div class="" style="height:200px;background-color: white;">
+      <p style="padding-left:10px;padding-top:20px;;">
+        <i class="icofont-star icofont-2x text-warning"  ></i>
+        <i class="icofont-star icofont-2x text-warning"  ></i>
+        <i class="icofont-star icofont-2x text-warning"  ></i>
+        <i class="icofont-star icofont-2x text-warning"  ></i>
+        <i class="icofont-star icofont-2x text-warning"  ></i>
+      </p>
+       <h5 class="mb-4 ps-3 mt-3" style="color:rgb(4, 151, 4);font-family: 'Poppins', sans-serif;">Awesome Work</h5>
+       <p class="ps-3 pe-5" > The quality of the editing tools and the range of features available are impressive. </p>
+        </div>
+        <div class="card-body" style="background-color: rgba(8, 158, 8, 0.1);margin-top:50px;">
+          <div class="row">
+            <div class="col-md-3">
+         <img src="{%static 'images/test2.png' %}" data-aos="zoom-out"  alt="" style="width:80px;padding-right:10px;">
+         </div> 
+         <div class="col-md-9">
+          <h3>Micheal Khan</h3>
+          
+         </div>
+        </div>
+        </div>
+        
+      </div>
+    </div>
+    <div class="col-md-4 mb-5">
+      <div class="card" style="width:25rem;">
+        <div class="" style="height:200px;background-color: white;">
+      <p style="padding-left:10px;padding-top:20px;;">
+        <i class="icofont-star icofont-2x text-warning"  ></i>
+        <i class="icofont-star icofont-2x text-warning"  ></i>
+        <i class="icofont-star icofont-2x text-warning"  ></i>
+        <i class="icofont-star icofont-2x text-warning"  ></i>
+        <i class="icofont-star icofont-2x text-warning"  ></i>
+      </p>
+       <h5 class="mb-4 ps-3 mt-3" style="color: red;font-family: 'Poppins', sans-serif;">Wonderful </h5>
+       <p class="ps-3 pe-5" >I'm not very tech-savvy, but this image editing website is incredibly user-friendly. I've been able to create some fantastic images thanks to this website. </p>
+        </div>
+        <div class="card-body" style="background-color: rgba(175, 58, 58, 0.1);margin-top:50px;">
+          <div class="row">
+            <div class="col-md-3">
+         <img src="{%static 'images/test3.png' %}" data-aos="zoom-out"  alt="" style="width:80px;padding-right:10px;">
+         </div> 
+         <div class="col-md-9">
+          <h3>Ananta Jalil</h3>
+          
+         </div>
+        </div>
+        </div>
+      </div>
+    </div>
+   </div>
+  </div>
+</section>
+
+
+<section class="bg-light" style="background-image: url('{%static 'images/tri.png' %});background-size: cover;" >
+  <div class="container " >
+   <h5 class="mt-5 text-danger pt-5" style="text-align:center;font-family: Kalam ,cursive;">Explore</h5>
+  <h1 class="text-dark " style="text-align:center;margin-bottom:70px;font-family: 'Poppins', sans-serif;"> Our Services</h1>
+    <div class="row mb-5 ps-5 " style="border-radius: 10px;padding-top:30px;padding-bottom:30px;background-color: rgba(67, 119, 188, 0.3)">
+      <div class="col-md-2">
+    <img src="{%static 'images/detection.jpg' %}"  data-aos="zoom-out" style="width:150px;height:150px;background-color:red;">
+         </div>
+         <div class="col-md-1 pt-2">
+          <div class="d-flex" style="height: 120px;">
+            <div class="vr"></div>
+          </div>
+         </div>
+  <div class="col-md-6">
+    <img src="{%static 'images/tri.png' %}"  data-aos="zoom-out" class="position-absolute">
+        <h2 class="pt-2" style="font-family: 'Poppins', sans-serif;">EDGE DETECTION</h2>
+        <p >Edge detection is a technique of image processing used to identify points in a digital image with discontinuities, simply to say, sharp changes in the image brightness.  </p>
+ 
+  
+  </div>
+  <div class="col-3  pt-5">
+    <button type="button" class="btn btn-light text-dark mb-3 btn-lg" style="border:2px solid rgb(195, 23, 23);border-radius:17px;height:50px;width:150px;margin-left: 50px;;"><a href="{% url 'Login' %}" style="color:black;text-decoration: none;">TRY NOW</a></button><br>
+  </div>
+  </div>
+
+  <div class="row mb-5 ps-5 " style="border-radius: 10px;padding-top:30px;padding-bottom:30px;background-color: rgba(67, 119, 188, 0.3)">
+    <div class="col-md-2">
+  <img src="{%static 'images/qrcode.png' %}"  data-aos="zoom-out" style="width:150px;height:150px;">
+       </div>
+       <div class="col-md-1 pt-2">
+        <div class="d-flex" style="height: 120px;">
+          <div class="vr"></div>
+        </div>
+       </div>
+<div class="col-md-6">
+  <img src="{%static 'images/tri.png' %}"  data-aos="zoom-out" class="position-absolute">
+      <h2 class="pt-2" style="font-family: 'Poppins', sans-serif;">QR Code Generator</h2>
+      <p >It is a machine-scannable image that can instantly be read using scanner. </p>
+
+
+</div>
+<div class="col-3  pt-5">
+  <button type="button" class="btn btn-light text-dark mb-3 btn-lg" style="border:2px solid rgb(195, 23, 23);border-radius:17px;height:50px;width:150px;margin-left: 50px;;"><a href="{% url 'Login' %}" style="color:black;text-decoration: none;">TRY NOW</a></button><br>
+  </div>
+
+  
+  </div>
+
+  <div class="row  ps-5 " style="border-radius: 10px;padding-top:30px;padding-bottom:30px;background-color: rgba(67, 119, 188, 0.3)">
+    <div class="col-md-2">
+  <img src="{%static 'images/cartoon.jpg' %}"  data-aos="zoom-out" style="width:120px;height:150px;">
+       </div>
+       <div class="col-md-1 pt-2">
+        <div class="d-flex" style="height: 120px;">
+          <div class="vr"></div>
+        </div>
+       </div>
+<div class="col-md-6">
+  <img src="{%static 'images/tri.png' %}" class="position-absolute">
+      <h2 class="pt-2" style="font-family: 'Poppins', sans-serif;">CARTOONIFY</h2>
+      <p >Transform your photo into a cartoon with a single click! Select from several cartoon effects and filters that'll turn your image into a work of art. </p>
+
+
+</div>
+<div class="col-3  pt-5">
+  <button type="button" class="btn btn-light text-dark mb-3 btn-lg" style="border:2px solid rgb(195, 23, 23);border-radius:17px;height:50px;width:150px;margin-left: 50px;"><a href="{% url 'Login' %}" style="color:black;text-decoration: none;">TRY NOW</a></button><br>
+  </div>
+</div>
+
+
+
+
+</div>
+
+
+
+  </div>
+</section>
+
+<section  style="margin-bottom:120px;">
+  <div class="container">
+  <h5 class="mt-5 text-danger pt-5" style="text-align:center;font-family: 'Kalam', cursive;">Clients</h5>
+  <h1 class="text-dark " style="text-align:center;margin-bottom:70px;font-family: 'Poppins', sans-serif;">Some Of Our Clients</h1>
+   <div class="row">
+    <div class="col-2" style="padding-left:70px;">
+      <img src="{%static 'images/iconic.png' %}" data-aos="flip-left">
+    </div>
+    <div class="col-3" style="padding-left:70px;">
+      <img src="{%static 'images/microw.png' %}" data-aos="flip-left">
+    </div>
+    <div class="col-2">
+      <img src="{%static 'images/tree.png' %}" data-aos="flip-left">
+    </div>
+    <div class="col-2">
+      <img src="{%static 'images/bakery.png' %}" data-aos="flip-left">
+    </div>
+    <div class="col-2" style="padding-left:70px;">
+      <img src="{%static 'images/white.png' %}" data-aos="flip-left">
+    </div>
+   
+   </div>
+   </div>
+</section>
+
+
+<!--<section class="bg-light" style="padding-bottom: 50px;">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h5 class="mt-5 text-danger pt-5 ms-3" style="font-family: 'Kalam', cursive;">Latest News</h5>
+  <h1 class="text-dark ms-2" style="margin-bottom:40px;font-family: 'Poppins', sans-serif;">Our Latest Blog Posts Will Learn
+     Business</h1>
+  <p class="ms-2" style="font-size:16px;">In today's digital age, where visuals play a crucial role in communication and storytelling, image editing has become an essential skill. Whether you're a professional photographer, a graphic designer, or an enthusiastic hobbyist ,understanding the concept and techniques of image editing can greatly elevate the impact and quality of your visuals. In this blog post, we'll delve into the definition of image editing, its significance, and how it empowers us to create stunning visual experiences.</p>
+      </div>
+      <div class="col-md-4"  style="padding-top: 50px;padding-left:70px;">
+        <div class="card" style="width: 20rem;">
+          <img src="{%static 'images/women.png' %}" class="card-img-top" data-aos="fade-down" alt="...">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-6">
+            <h5 class="card-title mb-3">By : Admin </h5>
+          </div>
+          <div class="col-6 ps-5"><p>Nov 21,2021</p></div>
+        </div>
+
+            <p class="card-text">The Art News Photoshop & Science Of Colors and Their</p>
+            
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 " style="padding-top: 50px;padding-left:70px;">
+        <div class="card" style="width: 20rem;">
+          <img src="{%static 'images/dance.png' %}" class="card-img-top" data-aos="fade-down" alt="...">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-6">
+            <h5 class="card-title mb-3">By : Admin </h5>
+          </div>
+          <div class="col-6 ps-5"><p>Nov 21,2021</p></div>
+        </div>
+
+
+            <p class="card-text">Photoshop & Color Science and Their Applications</p>
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+  </div>
+
+</section>-->
+
+<section class="bg-light" style="padding-bottom: 50px;">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h5 class="mt-5 text-danger pt-5 ms-3" style="font-family: 'Kalam', cursive;">Latest News</h5>
+  <h1 class="text-dark ms-2" style="margin-bottom:40px;font-family: 'Poppins', sans-serif;">Our Latest Blog Posts Will Learn
+     Business</h1>
+  <p class="ms-2" style="font-size:16px;">In today's digital age, where visuals play a crucial role in communication and storytelling, image editing has become an essential skill. Whether you're a professional photographer, a graphic designer, or an enthusiastic hobbyist ,understanding the concept and techniques of image editing can greatly elevate the impact and quality of your visuals. In this blog post, we'll delve into the definition of image editing, its significance, and how it empowers us to create stunning visual experiences.</p>
+      </div>
+      {% for i in datas%}
+     {% if i.id < 5 %}
+      <div class="col-md-4"  style="padding-top: 100px;padding-left:70px;">
+        <div class="card" style="width: 22rem;margin-bottom:50px;border-radius: 5%;">
+          <img src="{{i.Image.url}}" class="card-img-top" data-aos="fade-down" alt="..." height="200px">
+          <div class="card-body">
+            <h5 class="card-title" >{{i.title}}</h5>
+            <p class="card-text">{{i.description|truncatechars:70}}</p>
+            <p class="card-text " style="margin-left: 200px;" ><b>{{i.Writter}}</b></p>
+            
+            <a href="{% url 'detailblog' id=i.id %}" class="btn btn-danger">Read more</a>
+            
+          </div>
+          </div>
+      </div>
+   {% endif %}
+      {% endfor %}
+
+    </div>
+   
+  </div>
+
+</section>
+
+
+
+
+
+<section>
+  <script src="https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.js"></script>
+
+<script>
+   AOS.init({
+   
+  duration:600,
+ 
+}); 
+
+  
+</script>   
+  
+</body>
+</html>
+{% endblock %}

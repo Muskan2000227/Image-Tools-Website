@@ -1,0 +1,79 @@
+{% extends 'side2.html' %}
+{% block content%}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{%static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{%static 'icofont/icofont.min.css' %}"> 
+    <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <style>
+        
+    </style>
+</head>
+<body style="background-color:#E4E9F7;">
+    <script src="{% static 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js' %}" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    
+<section style="padding-top: 50px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p class="text-danger" style="font-size: 40px; margin-top: 10px; text-align: center; margin-bottom: 30px;font-family: 'Kalam', cursive;border-radius: 5%;">Barcode generator</p>
+                <p style="font-family: 'Poppins', sans-serif;margin-bottom: 30px;font-size: medium;">Barcodes are applied to products to quickly identify them.Generate your barcode here.</p>
+                <form method="POST" action="" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    <label for="barcode_data">Barcode Data:</label>
+        <input type="text" id="barcode_data" name="barcode_data" required><br><br>
+
+        <label for="barcode_format">Barcode Format:</label>
+        <select id="barcode_format" name="barcode_format" required>
+            <option value="code128">Code 128</option>
+            <option value="ean13">EAN-13</option>
+            <option value="code39">Code 39</option>
+        </select><br><br>
+    <button type="submit" class="bg-danger" style="margin-left:200px;margin-top: 100px;padding: 10px;font-size: 25px;border-radius: 5%;width:200px;margin-bottom: 50px;">GENERATE</button>
+      </form>      </div>
+            <div class="col-md-6">
+                    {%  if msg == 1 %}
+            <img src="{% static 'barcode.png' %}"   height="400px;" width="650px;" style="margin-bottom: 50px;">
+          
+            <button type="submit" class="bg-danger" style="margin-left:200px;;
+            padding: 10px;font-size: 25px;border-radius: 5%;width:300px;margin-bottom: 50px;"><a href="{% static 'barcode.png' %}" download style="color:white;text-decoration: none;">Download Image</a></button></center>
+
+            {% else %}
+            <img src="{% static 'images/barc.png' %}"   height="400px;" width="650px;" style="margin-bottom: 50px;">
+        
+            {% endif %}
+
+            
+            </div>
+            
+        </div>
+    </div>
+    
+    
+    
+    </section>
+
+    
+    
+
+    <script>
+        var fileInput = document.getElementById('file');
+        var fileSelectedMessage = document.getElementById('file-selected-message');
+        var fileNameContainer = document.getElementById('file-name');
+
+        fileInput.addEventListener('change', function() {
+            var fileName = fileInput.files[0].name;
+            fileNameContainer.textContent = fileName;
+            fileSelectedMessage.style.display = 'block';
+        });
+    </script>
+    
+</body>
+</html>
+{% endblock %}
