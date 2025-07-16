@@ -1,0 +1,10 @@
+django
+pillow
+opencv-python
+numpy
+pytesseract
+newsapi-python
+python-barcode
+qrcode
+moviepy
+gunicorngun
